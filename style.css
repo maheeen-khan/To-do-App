@@ -7,7 +7,7 @@ body{
 }
 .container{
     border: 8px double white;
-    box-shadow: 2px 2px 7px rgb(5, 69, 187), -2px -2px 7px  rgb(5, 69, 187);
+    box-shadow: 2px 2px 17px rgb(5, 69, 187), -2px -2px 17px  rgb(5, 69, 187);
 }
 #add{
     width: 26px;
