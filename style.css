@@ -6,7 +6,7 @@ body{
     /* filter: grayscale(1); */
 }
 .container{
-    border: 8px double white;
+    border: 14px double white;
     box-shadow: 2px 2px 17px rgb(255, 255, 255), -2px -2px 17px  rgb(5, 69, 187);
     backdrop-filter: blur(10px);
 }

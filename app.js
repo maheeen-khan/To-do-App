@@ -6,8 +6,9 @@ function addTask(){
     
     task.style.backgroundColor = 'white';
     task.style.borderRadius = '6px';
-    task.style.padding = '6px';
+    task.style.paddingTop = '6px';
     task.style.paddingLeft = '12px';
+    task.style.paddingBottom = '1px';
     task.style.marginBottom = '11px';
     task.style.textAlign = 'left';
     task.innerHTML = `${todo.value}`;
@@ -25,6 +26,8 @@ function addTask(){
 
     // Append the task div to the tasks container(at html)
     document.getElementById("tasks").appendChild(task);
+
+
 
 }
 
