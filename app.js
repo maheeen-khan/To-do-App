@@ -36,8 +36,9 @@ function addTask(){
     task2.appendChild(status);  // Append the status to the task div
 
     var task3 = document.createElement('div');
-    task3.classList.add('col-lg-6','col-md-6' ,'col-sm-6','bg-success');
-    task3.setAttribute('style', 'text-align:right !important');
+    task3.classList.add('col-lg-6','col-md-6' ,'col-sm-6','bg-success','checkbox');
+    // task3.setAttribute('style', 'accent-color:pink !important');
+    // task3.setAttribute('style', 'text-align:right !important');
     task3.innerHTML = `<input type="checkbox" name="finished" id="finished">`;
 
     cont.appendChild(task2);

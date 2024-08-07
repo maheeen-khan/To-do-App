@@ -25,3 +25,7 @@ body{
     border: none;
     width: 80%;
 }
+.checkbox{
+    accent-color: rgb(239, 82, 184);
+    text-align: right;
+}
