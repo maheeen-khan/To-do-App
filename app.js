@@ -3,12 +3,15 @@ function addTask(){
 
     var task = document.createElement('div');
     task.setAttribute('id','list');
-    task.setAttribute('class','d-flex');
-    task.className += ' justify-content-between';
-    task.className += ' row';
+  
+    var cont = document.createElement('div');
+    cont.classList.add('row');
+
+    task.classList.add('d-flex','flex-column', 'container', 'justify-content-between'); 
+  
 
     var task2 = document.createElement('div');
-    task2.className += ' col-6';
+    task2.classList.add('col-lg-6', 'col-md-6', 'col-sm-6', 'bg-info');
 
     console.log(task);
     
@@ -33,11 +36,15 @@ function addTask(){
     task2.appendChild(status);  // Append the status to the task div
 
     var task3 = document.createElement('div');
-    task3.className += 'col-6';
+    task3.classList.add('col-lg-6','col-md-6' ,'col-sm-6','bg-success');
+    task3.setAttribute('style', 'text-align:right !important');
     task3.innerHTML = `<input type="checkbox" name="finished" id="finished">`;
 
-    task.appendChild(task2);
-    task.appendChild(task3);
+    cont.appendChild(task2);
+    cont.appendChild(task3);
+
+    task.appendChild(cont);
+
 
     // Append the task div to the tasks container(at html)
     document.getElementById("tasks").appendChild(task);
