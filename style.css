@@ -29,3 +29,7 @@ body{
     accent-color: rgb(239, 82, 184);
     text-align: right;
 }
+#finished{
+    width: 8% !important;
+    height: 5vh;
+}
