@@ -1,3 +1,14 @@
+function taskChecked(){
+    if(document.getElementById('finished').checked === true){
+        console.log("Task done");
+        document.getElementById('stat').innerHTML = 'Task done';
+    }
+    else{
+        document.getElementById('stat').innerHTML = 'pending';
+    }
+
+}
+
 function addTask(){
     // console.log(document.getElementById('todo').value);
 
@@ -30,6 +41,7 @@ function addTask(){
     //adding status
     var status = document.createElement('p');
     status.innerHTML = `pending`;
+    status.setAttribute('id','stat');
     status.style.fontSize = '11px';
     status.style.color = 'red';
 
@@ -39,7 +51,7 @@ function addTask(){
     task3.classList.add('col-lg-6','col-md-6' ,'col-sm-6','bg-success','checkbox');
     // task3.setAttribute('style', 'accent-color:pink !important');
     // task3.setAttribute('style', 'text-align:right !important');
-    task3.innerHTML = `<input type="checkbox" name="finished" id="finished">`;
+    task3.innerHTML = `<input type="checkbox" name="finished" id="finished" onclick="taskChecked()">`;
 
     cont.appendChild(task2);
     cont.appendChild(task3);
