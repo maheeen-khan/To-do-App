@@ -28,8 +28,15 @@ body{
 .checkbox{
     accent-color: rgb(239, 82, 184);
     text-align: right;
+    display: flex;
+    justify-content:flex-end;
 }
 #finished{
     width: 8% !important;
     height: 5vh;
+}
+#dlt{
+    width: 20px;
+    height: 4vh;
+    margin-right: 5px;
 }

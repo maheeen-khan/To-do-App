@@ -52,7 +52,7 @@ function addTask(){
     task3.classList.add('col-lg-6','col-md-6' ,'col-sm-6','bg-success','checkbox');
     // task3.setAttribute('style', 'accent-color:pink !important');
     // task3.setAttribute('style', 'text-align:right !important');
-    task3.innerHTML = `<input type="checkbox" name="finished" id="finished" onclick="taskChecked(this)">`;
+    task3.innerHTML = `<img src="./images/dlt-removebg-preview.png" alt="delete" id="dlt">  <input type="checkbox" name="finished" id="finished" onclick="taskChecked(this)">`;
 
     cont.appendChild(task2);
     cont.appendChild(task3);
