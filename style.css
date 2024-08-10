@@ -12,6 +12,7 @@ body{
     border-radius: 15px;
     height: 80vh;
     margin-top: 7%;
+    margin-bottom: 7%;
     overflow-y: scroll;
 }
 .flex-column{
