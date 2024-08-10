@@ -19,7 +19,7 @@ function addTask(){
     var cont = document.createElement('div');
     cont.classList.add('row');
 
-    task.classList.add('d-flex','flex-column', 'container', 'justify-content-between'); 
+    task.classList.add('d-flex','flex-column', 'container', 'justify-content-between', 'animate__animated','animate__zoomIn'); 
   
 
     var task2 = document.createElement('div');
@@ -52,7 +52,7 @@ function addTask(){
     task3.classList.add('col-lg-6','col-md-6' ,'col-sm-6','bg-success','checkbox');
     // task3.setAttribute('style', 'accent-color:pink !important');
     // task3.setAttribute('style', 'text-align:right !important');
-    task3.innerHTML = `<img src="./images/edit-removebg-preview.png" alt="edit" id="edit">  <img src="./images/dlt-removebg-preview.png" alt="delete" id="dlt">  <input type="checkbox" name="finished" id="finished" onclick="taskChecked(this)">`;
+    task3.innerHTML = `<img src="./images/edit-removebg-preview.png" alt="edit" id="edit">  <img src="./images/dlt-removebg-preview.png" alt="delete" id="dlt" onclick="deleteTask()">  <input type="checkbox" name="finished" id="finished" onclick="taskChecked(this)">`;
 
     cont.appendChild(task2);
     cont.appendChild(task3);
@@ -67,6 +67,9 @@ function addTask(){
 
 }
 
+function deleteTask(){
+
+}
 
 function enter(event){
     if(event.keyCode === 13){
