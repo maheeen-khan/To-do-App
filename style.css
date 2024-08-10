@@ -5,10 +5,24 @@ body{
     background-size: cover;
     /* filter: grayscale(1); */
 }
-.container{
-    border: 14px double white;
-    box-shadow: 2px 2px 17px rgb(255, 255, 255), -2px -2px 17px  rgb(5, 69, 187);
+.main-cont{
+    border: 12px double white;
+    box-shadow: 2px 2px 25px rgb(255, 255, 255), -2px -2px 17px  rgb(255, 255, 255);
     backdrop-filter: blur(10px);
+    border-radius: 15px;
+    height: 80vh;
+    margin-top: 7%;
+    overflow-y: scroll;
+}
+.flex-column{
+    background-color: brown !important;
+}
+.color{
+    background:linear-gradient(45deg,pink,rgb(172, 27, 51));
+    color: white !important;
+}
+.head{
+    color: rgb(174, 13, 70);
 }
 #add{
     width: 26px;
