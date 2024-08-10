@@ -56,7 +56,7 @@ body{
     height: 5vh;
 }
 #dlt{
-    width: 20px;
+    width: 22px;
     height: 4vh;
     margin-right: 5px;
 }
@@ -64,4 +64,10 @@ body{
     width: 26px;
     height: 4vh;
     margin-right: 5px;
+}
+
+@media screen and (max-width:575px){
+    #below-inp{
+        text-align: right !important;
+    }
 }
