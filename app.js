@@ -5,6 +5,7 @@ function taskChecked(checkbox) {
     if (checkbox.checked === true) {
         console.log("Task done");
         statusElement.innerHTML = 'Task done';
+        statusElement.style.color = 'green';
     } else {
         statusElement.innerHTML = 'pending';
     }

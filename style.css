@@ -19,7 +19,7 @@ body{
     background-color: brown !important;
 }
 .color{
-    background:linear-gradient(45deg,pink,rgb(172, 27, 51));
+    background:linear-gradient(90deg,rgb(248, 228, 231),rgb(172, 27, 51));
     color: white !important;
 }
 .head{
