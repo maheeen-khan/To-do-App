@@ -15,8 +15,13 @@ body{
     margin-bottom: 7%;
     overflow-y: scroll;
 }
-.flex-column{
-    background-color: brown !important;
+#list{
+    overflow-x: hidden;
+    background:linear-gradient(90deg,rgb(248, 228, 231),rgb(172, 27, 51));
+    border-radius: 15px !important;
+}
+.row{
+    padding-top: 12px !important;
 }
 .color{
     background:linear-gradient(90deg,rgb(248, 228, 231),rgb(172, 27, 51));

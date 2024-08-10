@@ -8,6 +8,7 @@ function taskChecked(checkbox) {
         statusElement.style.color = 'green';
     } else {
         statusElement.innerHTML = 'pending';
+        statusElement.style.color = 'red';
     }
 }
 
@@ -16,7 +17,7 @@ function addTask(){
 
     var task = document.createElement('div');
     task.setAttribute('id','list');
-  
+    // task.style.border = '2px solid black';
 
 
     task.classList.add('d-flex','flex-column', 'container', 'justify-content-between', 'animate__animated','animate__zoomIn'); 
@@ -29,8 +30,9 @@ function addTask(){
 
     console.log(task);
     
-    task.style.backgroundColor = 'white';
+    // task.style.backgroundColor = 'white';
     task.style.borderRadius = '6px';
+    task.setAttribute('class','box');
     task.style.paddingTop = '6px';
     task.style.paddingLeft = '12px';
     task.style.paddingBottom = '1px';
