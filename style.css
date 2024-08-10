@@ -40,7 +40,7 @@ body{
     height: 4vh;
     margin-right: 5px;
 }
-#edit{
+#edit,#tick{
     width: 26px;
     height: 4vh;
     margin-right: 5px;
