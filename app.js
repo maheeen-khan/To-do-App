@@ -26,7 +26,7 @@ function addTask(){
     cont.classList.add('row', 'color');
 
     var task2 = document.createElement('div');
-    task2.classList.add('col-lg-6', 'col-md-6', 'col-sm-6');
+    task2.classList.add('col-lg-7', 'col-md-6', 'col-sm-6');
 
     console.log(task);
     
@@ -41,7 +41,7 @@ function addTask(){
     task2.innerHTML = `<input type="text" name="below-inp" id="below-inp" value="${todo.value}" style="background: transparent;  border: none;" disabled> `;
 
     task.classList.add('d-flex','flex-column', 'container', 'justify-content-between', 'animate__animated','animate__zoomIn'); 
-    
+
     // document.getElementById("tasks").appendChild(task);
 
 
@@ -55,7 +55,7 @@ function addTask(){
     task2.appendChild(status);  // Append the status to the task div
 
     var task3 = document.createElement('div');
-    task3.classList.add('col','col-lg-6','col-md-6' ,'col-sm-6','checkbox');
+    task3.classList.add('col','col-lg-5','col-md-6' ,'col-sm-6','checkbox');
     // task3.setAttribute('style', 'accent-color:pink !important');
     // task3.setAttribute('style', 'text-align:right !important');
     task3.innerHTML = `<img src="./images/edit-removebg-preview.png" alt="edit" id="edit" onclick="editTask(event)">  <img src="./images/dlt-removebg-preview.png" alt="delete" id="dlt" onclick="deleteTask(event)">  <input type="checkbox" name="finished" id="finished" onclick="taskChecked(this)">`;

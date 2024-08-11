@@ -46,13 +46,13 @@ body{
     width: 80%;
 }
 .checkbox{
-    accent-color: rgb(239, 82, 184);
+    accent-color: pink;
     text-align: right;
     display: flex;
     justify-content:space-evenly;
 }
 #finished{
-    width: 8% !important;
+    width: 20px !important;
     height: 5vh;
 }
 #dlt{
@@ -64,4 +64,7 @@ body{
     width: 26px;
     height: 4vh;
     margin-right: 5px;
+}
+#below-inp{
+    overflow-x: visible;
 }
