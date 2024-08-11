@@ -2,16 +2,23 @@
     font-family: 'krona';
     src: url(./Krona_One/KronaOne-Regular.ttf);
 }
-body{
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(./Roboto_Mono/RobotoMono-Italic-VariableFont_wght.ttf);
+}
+
+body {
     width: 100%;
     background-image: url(images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* filter: grayscale(1); */
 }
-.main-cont{
+
+.main-cont {
     border: 12px double white;
-    box-shadow: 2px 2px 25px rgb(255, 255, 255), -2px -2px 17px  rgb(255, 255, 255);
+    box-shadow: 2px 2px 25px rgb(255, 255, 255), -2px -2px 17px rgb(255, 255, 255);
     backdrop-filter: blur(33px);
     border-radius: 15px;
     height: 80vh;
@@ -20,67 +27,83 @@ body{
     padding-top: 1%;
     overflow-y: scroll;
 }
-#list{
+
+#list {
     overflow-x: hidden;
-    background:linear-gradient(90deg,rgb(248, 228, 231),rgb(172, 27, 51));
+    background: linear-gradient(90deg, rgb(248, 228, 231), rgb(172, 27, 51));
     border-radius: 15px !important;
 }
-.row{
+
+.row {
     padding-top: 12px !important;
 }
-.color{
-    background:linear-gradient(90deg,rgb(248, 228, 231),rgb(172, 27, 51));
+
+.color {
+    background: linear-gradient(90deg, rgb(248, 228, 231), rgb(172, 27, 51));
     color: white !important;
 }
-.head{
+
+.head {
     color: rgb(174, 13, 70);
-    font-family:'krona';
+    font-family: 'krona';
     margin-top: 30px;
 }
-#add{
+
+#add {
     width: 26px;
     border-radius: 50%;
 }
-.btn1{
+
+.btn1 {
     border: none;
     background: none;
 }
-#todo{
+
+#todo {
     border-radius: 18px;
     padding: 6px;
     padding-left: 12px;
     border: none;
     width: 80%;
 }
-.checkbox{
+
+.checkbox {
     accent-color: pink;
     text-align: right;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
-#finished{
+
+#finished {
     width: 20px !important;
     height: 5vh;
 }
-#dlt{
+
+#dlt {
     width: 22px;
     height: 4vh;
     margin-right: 5px;
 }
-#edit,#tick{
+
+#edit,
+#tick {
     width: 26px;
     height: 4vh;
     margin-right: 5px;
 }
-#below-inp{
+
+#below-inp {
     overflow-x: scroll;
     width: 100%;
 }
-#no-work{
+
+#no-work {
     /* font-size: 2rem; */
-    font-style: italic;
+    /* font-style: italic; */
     color: grey;
+    font-family: 'Roboto Mono';
 }
-.happy-face{
+
+.happy-face {
     width: 100px;
 }
