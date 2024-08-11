@@ -20,7 +20,7 @@ function addTask(){
     // task.style.border = '2px solid black';
 
 
-    task.classList.add('d-flex','flex-column', 'container', 'justify-content-between', 'animate__animated','animate__zoomIn'); 
+
   
     var cont = document.createElement('div');
     cont.classList.add('row', 'color');
@@ -40,6 +40,7 @@ function addTask(){
     task.style.textAlign = 'left';
     task2.innerHTML = `<input type="text" name="below-inp" id="below-inp" value="${todo.value}" style="background: transparent;  border: none;" disabled> `;
 
+    task.classList.add('d-flex','flex-column', 'container', 'justify-content-between', 'animate__animated','animate__zoomIn'); 
     
     // document.getElementById("tasks").appendChild(task);
 

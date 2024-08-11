@@ -8,7 +8,7 @@ body{
 .main-cont{
     border: 12px double white;
     box-shadow: 2px 2px 25px rgb(255, 255, 255), -2px -2px 17px  rgb(255, 255, 255);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(33px);
     border-radius: 15px;
     height: 80vh;
     margin-top: 7%;
