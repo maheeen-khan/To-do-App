@@ -10,7 +10,9 @@ function taskChecked(checkbox) {
         statusElement.innerHTML = 'pending';
         statusElement.style.color = 'red';
     }
+    
 }
+
 
 function addTask(){
     // console.log(document.getElementById('todo').value);
@@ -20,13 +22,12 @@ function addTask(){
     // task.style.border = '2px solid black';
 
 
-
   
     var cont = document.createElement('div');
     cont.classList.add('row', 'color');
 
     var task2 = document.createElement('div');
-    task2.classList.add('col-lg-7', 'col-md-6', 'col-sm-6');
+    task2.classList.add('col-lg-8', 'col-md-8', 'col-sm-6');
 
     console.log(task);
     
@@ -55,7 +56,7 @@ function addTask(){
     task2.appendChild(status);  // Append the status to the task div
 
     var task3 = document.createElement('div');
-    task3.classList.add('col','col-lg-5','col-md-6' ,'col-sm-6','checkbox');
+    task3.classList.add('col','col-lg-4','col-md-4' ,'col-sm-6','checkbox');
     // task3.setAttribute('style', 'accent-color:pink !important');
     // task3.setAttribute('style', 'text-align:right !important');
     task3.innerHTML = `<img src="./images/edit-removebg-preview.png" alt="edit" id="edit" onclick="editTask(event)">  <img src="./images/dlt-removebg-preview.png" alt="delete" id="dlt" onclick="deleteTask(event)">  <input type="checkbox" name="finished" id="finished" onclick="taskChecked(this)">`;
@@ -65,6 +66,7 @@ function addTask(){
 
     task.appendChild(cont);
 
+    document.getElementById('no-work').style.display = 'none';
 
     // Append the task div to the tasks container(at html)
     document.getElementById("tasks").appendChild(task);
@@ -73,9 +75,15 @@ function addTask(){
 
 }
 
+
+
 function deleteTask(event){
     event.target.parentNode.parentNode.parentNode.remove();
+    if(document.getElementById('tasks').innerText === ""){
+        document.getElementById('no-work').style.display = 'block';
+    }
 }
+
 
 
 function editTask(event){
@@ -86,6 +94,8 @@ function editTask(event){
     event.target.setAttribute('onclick', 'ticked(event)');
 }
 
+
+
 function ticked(event){
     console.log(event.target);
     event.target.parentNode.parentNode.childNodes[0].childNodes[0].disabled = true;
@@ -94,6 +104,8 @@ function ticked(event){
     event.target.setAttribute('id', 'edit');
 
 }
+
+
 function enter(event){
     if(event.keyCode === 13){
         addTask();
