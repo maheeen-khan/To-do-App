@@ -19,19 +19,22 @@ body {
 .main-cont {
     border: 12px double white;
     box-shadow: 2px 2px 25px rgb(255, 255, 255), -2px -2px 17px rgb(255, 255, 255);
-    backdrop-filter: blur(33px);
+    backdrop-filter: blur(73px);
     border-radius: 15px;
     height: 80vh;
     margin-top: 3%;
     margin-bottom: 6%;
     padding-top: 1%;
     overflow-y: scroll;
+    /* background-color: rgb(220, 220, 220); */
 }
 
 #list {
     overflow-x: hidden;
     background: linear-gradient(90deg, rgb(248, 228, 231), rgb(172, 27, 51));
     border-radius: 15px !important;
+    /* border: 1px solid white; */
+    box-shadow: 3px 3px 5px grey;
 }
 
 .row {
@@ -95,6 +98,7 @@ body {
 #below-inp {
     overflow-x: scroll;
     width: 100%;
+    font-weight: bold;
 }
 
 #no-work {
